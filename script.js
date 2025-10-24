@@ -25,13 +25,13 @@ function openProjectModal(id){
       <h2>To-Do List Web App</h2>
       <p>Full-stack To-Do application built with HTML/CSS/JS and Spring Boot (H2 DB). Features: add/edit/delete tasks, responsive layout, and persistent backend.</p>
       <p><strong>What I contributed:</strong> Frontend UI, task interactions, and connecting to API endpoints.</p>
-      <img src="/Screenshot 2025-10-24 163618.png" alt="project1" style="width:50%;border-radius:8px;margin-top:12px" />
+      <img src="/Images/Screenshot 2025-10-24 163618.png" alt="project1" style="width:50%;border-radius:8px;margin-top:12px" />
     `;
   } else if (id === 2){
     html = `
       <h2>Tool Rental App (Frontend)</h2>
       <p>Frontend for a tool rental mobile app built using Flutter & Dart. Built responsive screens for browsing tools, rentals and user flow improvements.</p>
-      <img src="/pro2.jpg" alt="project2" style="width:30%;border-radius:8px;margin-top:12px" />
+      <img src="/Images/pro2.jpg" alt="project2" style="width:30%;border-radius:8px;margin-top:12px" />
     `;
   } else {
     html = `<p>Project details will go here.</p>`;
