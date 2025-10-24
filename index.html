@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Haripriya R — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo" href="index.html">Haripriya R</a>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="#internship">Internship</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO / FRONT PAGE -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hello — I'm <span class="accent">Haripriya R</span></h1>
+        <p class="lead">A B.Sc (IT) graduate who loves creating clean, responsive, and efficient web experiences with a full-stack mindset.</p>
+        <div class="cta-row">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn btn-outline" href="Haripriyaaaa og_Resume[1].docx" download>Download Resume</a>
+        </div>
+        <div class="chips">
+          <span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Unix</span><span>SQL</span><span>PL/SQL</span>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <!-- Replace with your front-page photo: images/profile.jpg -->
+        <img src="/profie phto.jpg" alt="Haripriya profile photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div>
+        <p><!-- Add your personal about text here --> I am a motivated Information Technology graduate and passionate Frontend Developer turned Full Stack enthusiast. I love crafting clean, responsive, and user-focused interfaces while bringing them to life with powerful backend logic. Skilled in Java, Spring Boot, HTML, CSS, JavaScript, and SQL, I enjoy building complete, polished web applications that blend performance with great design.</p>
+        <ul class="about-list">
+          <li><strong>Location:</strong> Alandurai, Coimbatore</li>
+          <li><strong>Degree:</strong> BSc Information Technology — Nehru Arts & Science College</li>
+          <li><strong>Percentage:</strong> 90.8</li>
+        </ul>
+      </div>
+      <div class="about-cards">
+        <div class="card">
+          <h3>Skills</h3>
+          <p>Java · HTML · CSS · JavaScript · SQL · PL/SQL · Unix</p>
+        </div>
+        <div class="card">
+          <h3>Interpersonal</h3>
+          <p>Communication · Discipline · Problem Solving · Adaptability</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <!-- Replace images/project1.jpg -->
+          <img src="/Screenshot 2025-10-24 163618.png" alt="To-Do List Web App screenshot" />
+          <div class="project-body">
+            <h3>To-Do List Web App</h3>
+            <p>Full-stack To-Do application with add/edit/delete tasks, built with HTML/CSS/JS + Spring Boot and H2 DB. Responsive UI and smooth interactions.</p>
+            <div class="project-meta">Tech: HTML · CSS · JavaScript · Spring Boot · H2</div>
+            <button class="btn btn-sm" onclick="openProjectModal(1)">View</button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <!-- Replace images/project2.jpg -->
+          <img src="/pro2.jpg" alt="Tool Rental App screenshot" />
+          <div class="project-body">
+            <h3>Tool Rental App (Frontend)</h3>
+            <p>Frontend of a Tool Rental mobile app built with Flutter and Dart. Focus on intuitive UI, tool browsing, and smooth navigation.</p>
+            <div class="project-meta">Tech: Flutter · Dart · Android Studio</div>
+            <button class="btn btn-sm" onclick="openProjectModal(2)">View</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section id="internship" class="section container">
+    <h2 class="section-title">Internship</h2>
+    <div class="internship-row">
+      <div class="internship-photo">
+        <!-- Replace images/internship.jpg -->
+        <img src="/intern.jpg" alt="Cognizant internship photo" />
+      </div>
+      <div class="internship-body">
+        <h3>Analyst Trainee — Cognizant Technology Solutions</h3>
+        <p><strong>June 2025 – Aug 2025</strong></p>
+        <ul>
+          <li>Worked with SQL, PL/SQL and Unix; built and optimized queries for database operations.</li>
+          <li>Learned ITIL/ITSM fundamentals and practical ServiceNow use-cases for incident and change management.</li>
+        </ul>
+        <p class="small">(During my internship, I became best friends with SQL and PL/SQL queries.
+From fetching data to updating it, we worked in perfect sync.
+I optimized queries to keep databases smooth and efficient.
+Turns out, clean logic and good coffee make the perfect debugging duo! ☕)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt-bg">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Contact</h2>
+        <p>If you'd like to get in touch — email or connect on LinkedIn.</p>
+        <p class="contact-item"><strong>Email:</strong> <a href="mailto:haripriyarofficial@gmail.com">haripriyarofficial@gmail.com</a></p>
+        
+        <p class="contact-item"><strong>LinkedIn:</strong> <a id="linkedin" href="https://www.linkedin.com/in/haripriyarofficial" target="_blank" rel="noopener">My LinkedIn Profile</a></p>
+      </div>
+
+      <form id="contactForm" class="contact-form" onsubmit="submitForm(event)">
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Your email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Haripriya R</div>
+      <div class="footer-links">
+        <a href="achievements.html">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project modal (hidden by default) -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProjectModal()">✕</button>
+      <div id="projectModalBody"></div>
+    </div>
+  </div>
+</body>
+</html>
