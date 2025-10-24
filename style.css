@@ -28,7 +28,7 @@ html,body{margin:0;padding:0;background:linear-gradient(135deg,var(--accent2),va
 .hero-text h1{font-size:2.2rem;margin:0}
 .accent{background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{color:rgba(4,17,39,0.7);margin-top:12px}
-.hero-photo img{width:50%;max-width:320px;border-radius:50px;box-shadow:0 20px 40px rgba(11,18,32,0.15);border:6px solid rgba(255,255,255,0.4)}
+.hero-photo img{width:80%;max-width:320px;border-radius:50px;box-shadow:0 20px 40px rgba(11,18,32,0.15);border:6px solid rgba(255,255,255,0.4)}
 
 /* buttons and chips */
 .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;text-decoration:none;border:0;cursor:pointer}
